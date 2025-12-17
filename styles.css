@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #000428, #004e92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 390px;
+    padding: 25px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 0 50px rgba(0,255,255,0.35);
+}
+
+.title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #00ffff;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #00ffff;
+}
+
+.display {
+    background: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.history {
+    min-height: 60px;
+    max-height: 80px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    color: rgba(0,255,255,0.6);
+    margin-bottom: 10px;
+}
+
+.history div {
+    margin-bottom: 4px;
+}
+
+.current {
+    font-size: 2.5rem;
+    text-align: right;
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: white;
+    transition: 0.15s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+button:active {
+    box-shadow: inset 0 0 15px #00ffff;
+}
+
+.number {
+    background: rgba(255,255,255,0.15);
+}
+
+.operator {
+    background: linear-gradient(135deg, #00f260, #0575e6);
+}
+
+.func {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+.equals {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: black;
+    font-weight: bold;
+}
+
+.clear {
+    background: #f
